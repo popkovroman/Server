@@ -45,7 +45,7 @@ int main()
 	cout << "Ожидание входящих данных от клиента..." << endl;
 	char Text[SizeOfText]; //Создаем буфер для данных, в котором будет хранится текст
 	char Ansver[53] = "Сообщение успешно получшено";
-	while (true)
+	while (true) 
 	{
 		int clientAddrSize = sizeof(clientAddr);//размер структуры clientAddr
 		if ((client = accept(server, (sockaddr*)&clientAddr, &clientAddrSize)) != INVALID_SOCKET) //Обработка очереди запросов
